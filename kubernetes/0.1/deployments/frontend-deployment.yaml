@@ -1,0 +1,19 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: frontend
+spec:
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: frontend
+        image: fdammacco/kcc-frontend:0.1
+        env:
+        - name: BACKEND_HOST
+          value: backend-service
+        ports:
+        - containerPort: 80
