@@ -11,14 +11,6 @@ spec:
     spec:
       containers:
       - name: backend
-        image: fdammacco/kcc-backend:0.2    
-        volumeMounts:
-          - name: config-volume
-            mountPath: /etc/cfg
-      volumes:
-      - name: config-volume
-        configMap:
-          name: backend-configmap
-          items:
-          - key: config.js
-            path: config.js      
+        image: fdammacco/kcc-backend:0.1 
+        ports:
+        - containerPort: 8080
