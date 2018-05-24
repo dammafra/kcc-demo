@@ -11,5 +11,5 @@ spec:
     spec:
       containers:
       - name: nginx
-        # image: nginx:1.13-alpine
-        image: nginx:1.14-alpine        
+        image: nginx:1.13-alpine
+        # image: nginx:1.14-alpine        

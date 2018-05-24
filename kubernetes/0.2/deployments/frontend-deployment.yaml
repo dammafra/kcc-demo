@@ -12,6 +12,8 @@ spec:
       containers:
       - name: frontend
         image: fdammacco/kcc-frontend:0.1
+        # ports:
+        #   - containerPort: 80  
         env:
-        - name: BACKEND_HOST
-          value: backend-service
+          - name: BACKEND_HOST
+            value: backend-service
