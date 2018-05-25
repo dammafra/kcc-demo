@@ -12,8 +12,8 @@ spec:
       containers:
       - name: backend
         image: fdammacco/kcc-backend:0.2
-        ports:
-          - containerPort: 8080
+        # ports:
+        #   - containerPort: 8080
         volumeMounts:
           - name: config-volume
             mountPath: /etc/cfg
