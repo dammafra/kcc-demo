@@ -1,2 +1,3 @@
 **/.DS_Store
-/app/backend/root/api/node_modules/*
+/app/backend/0.1/root/api/node_modules/*
+/app/backend/0.2/root/api/node_modules/*
