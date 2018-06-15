@@ -4,9 +4,9 @@ metadata:
   name: kcc-ingress
 spec:
   rules:
-    - host: kcc.local
-      http:
-        paths:
-          - backend:
-              serviceName: frontend-service
-              servicePort: 80  
+  - host: kcc.local
+    http:
+      paths:
+      - backend:
+          serviceName: frontend-service
+          servicePort: 80

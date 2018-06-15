@@ -12,3 +12,5 @@ spec:
       containers:
       - name: backend
         image: fdammacco/kcc-backend:0.1
+        # ports:
+        #   - containerPort: 8080

@@ -11,9 +11,19 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: fdammacco/kcc-frontend:0.1
+        image: fdammacco/kcc-frontend:0.2
         # ports:
-        #   - containerPort: 80  
+        #   - containerPort: 8080
         env:
-          - name: BACKEND_HOST
-            value: backend-service
+        - name: BACKEND_HOST
+          value: backend-service
+        - name: USERNAME
+          valueFrom:
+            secretKeyRef: 
+              name: credentials-secret
+              key: username
+        - name: PASSWORD
+          valueFrom: 
+            secretKeyRef:
+              name: credentials-secret
+              key: password
