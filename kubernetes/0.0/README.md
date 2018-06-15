@@ -276,5 +276,11 @@ Events:
   Normal  ScalingReplicaSet  39s   deployment-controller  Scaled up replica set nginx-5ddc866df9 to 2
   Normal  ScalingReplicaSet  38s   deployment-controller  Scaled down replica set nginx-5f88d57b88 to 0
 ```
+Delete the nginx Deployment so that our cluster is clean again.
+```bash
+$ kubectl delete deployment nginx
+deployment "nginx" deleted
+```
+
 ## ... to Hero!
 Now that you we have discovered the basic concepts of kubernetes we are ready to [deploy our first application](../0.1/README.md). 
