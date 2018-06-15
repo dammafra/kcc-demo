@@ -13,6 +13,6 @@ This demo requires that you have the following installed on your machine:
     - `minikube delete`, to destroy the VM.
 
 ## Repository structure
-- In the [app](app/README.md) folder you will find the source code of the application that will be deployed in the second part of the demo.
+- In the [app](app/) folder you will find the source code of the application that will be deployed in the second part of the demo.
 
-- In the [kubernetes](kubernetes/README.md) folder you will find all the configuration files that will be used during the demo, and the steps to reproduce it.
+- In the [kubernetes](kubernetes/) folder you will find all the configuration files that will be used during the demo, and the steps to reproduce it.

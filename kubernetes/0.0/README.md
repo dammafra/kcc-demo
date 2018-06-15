@@ -283,4 +283,4 @@ deployment "nginx" deleted
 ```
 
 ## ... to Hero!
-Now that you we have discovered the basic concepts of kubernetes we are ready to [deploy our first application](../0.1/README.md). 
+Now that you we have discovered the basic concepts of kubernetes we are ready to [deploy our first application](../0.1/). 
