@@ -3,7 +3,7 @@ apiVersion: v1
 metadata:
   name: frontend-service
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: frontend
   ports:
