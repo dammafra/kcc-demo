@@ -92,7 +92,7 @@ Update succeeded. Deleting old controller: test
 Renaming test-9d289bbdae6a880f0d805e2fc72060b3 to test
 replicationcontroller "test" rolling updated
 ```
-We cat look at pods changes during the update using the `watch` command:
+We can look at pods changes during the update using the `watch` command:
 ```bash
 $ watch kubectl get pods
 Every 2,0s: kubectl get pods
