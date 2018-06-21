@@ -2,7 +2,7 @@
 > We will issue our commands from the directory `kubernetes/0.0`.
 
 ## Pods
-Pods are the smallest deployable units of computing that can be created and managed in Kubernetes. Here is a simple example of Pod:
+[Pods](https://kubernetes.io/docs/concepts/workloads/pods/pod/) are the smallest deployable units of computing that can be created and managed in Kubernetes. Here is a simple example of Pod:
 ```yaml
 # pods/prod-pod.yaml
 apiVersion: v1
@@ -46,7 +46,7 @@ test      1/1       Running   0          37s       env=test
 As defined in our `prod-pod.yaml` and `test-pod.yaml` we now have 2 running pods in our cluster, all running nginx version 1.13-alpine and with the labels set as expected.
 
 ## ReplicationControllers
-A ReplicationController ensures that a specified number of pod replicas are running at any one time. In other words, a ReplicationController makes sure that a pod or a homogeneous set of pods is always up and available. Here is a simple example of ReplicationController:
+A [ReplicationController](https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/) ensures that a specified number of pod replicas are running at any one time. In other words, a ReplicationController makes sure that a pod or a homogeneous set of pods is always up and available. Here is a simple example of ReplicationController:
 ```yaml
 # replicationcontrollers/test-replicationcontroller.yaml
 apiVersion: v1
@@ -118,7 +118,7 @@ prod      1/1       Running   0          2h        env=prod
 ```
 
 ## ReplicaSets
-A ReplicaSet is the "next-generation" ReplicationController. The only difference between a ReplicaSet and a ReplicationController right now is the set-based selector support (ReplicationController only supports equality-based selector). Here is a simple example of ReplicaSet:
+A [ReplicaSet](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/) is the "next-generation" ReplicationController. The only difference between a ReplicaSet and a ReplicationController right now is the set-based selector support (ReplicationController only supports equality-based selector). Here is a simple example of ReplicaSet:
 ```yaml
 # replicasets/testprod-replicaset.yaml
 apiVersion: apps/v1
@@ -169,7 +169,7 @@ No resources found.
 Notice that most `kubectl` commands that support ReplicationControllers also support ReplicaSets. One exception is the `rolling-update` command. If you want the rolling update you have to use using Deployments, that will be covered in next paragraph. Also, the rolling-update command is imperative whereas Deployments are declarative, so it's recommended using Deployments.
 
 ## Deployments
-So, a Deployment controller provides declarative updates for Pods and ReplicaSets. You describe a desired state in a Deployment object, and the Deployment controller changes the actual state to the desired state at a controlled rate. Typically, you don't have to use Pods od ReplicationControllers/Replicasets directly, but you can rely only on Deployments. Here is a simple example of Deployment:
+So, a [Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) controller provides declarative updates for Pods and ReplicaSets. You describe a desired state in a Deployment object, and the Deployment controller changes the actual state to the desired state at a controlled rate. Typically, you don't have to use Pods od ReplicationControllers/Replicasets directly, but you can rely only on Deployments. Here is a simple example of Deployment:
 ```yaml
 # deployments/nginx-deployment.yaml
 apiVersion: extensions/v1beta1
