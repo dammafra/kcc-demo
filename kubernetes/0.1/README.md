@@ -1,7 +1,6 @@
 # Deploy of application v0.1
 > We will issue our commands from the directory `kubernetes/0.1`.
 
-## Goal
 The end goal is to have the application running. In order to achieve that, we will have to deploy both backend and frontend. Once that is done, we will need to setup the communication between them.
 The only pod exposed to the outside world is the frontend. We will do this in two ways: via NodePort and with an Ingress.
 
@@ -186,3 +185,6 @@ kubernetes         ClusterIP   10.96.0.1        <none>        443/TCP        29d
 If we reload our frontend page everything should work. 
 
 It's interesting to notice that if we refresh the page, the backend that is answering us could change, because there are three replicas of it running in our cluster.
+
+## Next steps
+Now we are ready for [update our application](../0.2/)!
