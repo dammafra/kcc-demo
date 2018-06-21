@@ -147,7 +147,7 @@ ingress "kcc-ingress" created
 So, by pointing with our browser to `http://kcc.local` we can see our running frontend.
 
 ## Expose the backend
-Now that we can access our frontend, we should see errors coused by the impossibility to estrablish a communication with the backend. If we take a look back to the `frontend-deployment.yaml` file we'll see these lines:
+Now that we can access our frontend, we should see errors coused by the impossibility to establish a communication with the backend. If we take a look back to the `frontend-deployment.yaml` file we'll see these lines:
 ```yaml
 # deployments/backend-frontend.yaml
 ... 
