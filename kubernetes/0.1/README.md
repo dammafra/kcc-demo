@@ -77,6 +77,7 @@ A Kubernetes [Service](https://kubernetes.io/docs/concepts/services-networking/s
 
 Let's take a look to the `services/frontend-service.yaml` configuration file:
 ```yaml
+# services/frontend-service.yaml
 kind: Service
 apiVersion: v1
 metadata:
