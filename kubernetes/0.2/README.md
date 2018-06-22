@@ -77,7 +77,9 @@ Error: Cannot find module '/etc/cfg/config.js'
     at require (internal/module.js:11:18)
 ...
 ```
-So our new backend needs a configuration file, ie `/etc/cfg/config.js` in order to work properly.
+**Note:**  You can use `kubectl logs`, `kubectl exec`, or `kubectl describe` to help you debug if something goes wrong.
+
+So our new backend needs a configuration file, ie `/etc/cfg/config.js`, in order to work properly.
 ```js
 // configmaps/config.js
 var config = {
