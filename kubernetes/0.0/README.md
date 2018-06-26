@@ -169,7 +169,7 @@ No resources found.
 Notice that most `kubectl` commands that support ReplicationControllers also support ReplicaSets. One exception is the `rolling-update` command. If you want the rolling update you have to use using Deployments, that will be covered in next paragraph. Also, the rolling-update command is imperative whereas Deployments are declarative, so it's recommended using Deployments.
 
 ## Deployments
-So, a [Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) controller provides declarative updates for Pods and ReplicaSets. You describe a desired state in a Deployment object, and the Deployment controller changes the actual state to the desired state at a controlled rate. Typically, you don't have to use Pods od ReplicationControllers/Replicasets directly, but you can rely only on Deployments. Here is a simple example of Deployment:
+So, a [Deployments](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) controller provides declarative updates for Pods and ReplicaSets. You describe a desired state in a Deployment object, and the Deployment controller changes the actual state to the desired state at a controlled rate. Typically, you don't have to use Pods or ReplicationControllers/Replicasets directly, but you can rely only on Deployments. Here is a simple example of Deployment:
 ```yaml
 # deployments/nginx-deployment.yaml
 apiVersion: extensions/v1beta1
