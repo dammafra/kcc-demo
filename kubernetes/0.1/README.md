@@ -105,7 +105,7 @@ frontend-service   NodePort    10.101.163.175   <none>        80:32354/TCP   15s
 kubernetes         ClusterIP   10.96.0.1        <none>        443/TCP        28d
 ```
 As you can see, the `frontend-service` is mapping the port 80 from the pod to a random external port, in this case 32354, on the nodes IP address. We have only one node in our cluster, minikube, and we can get its IP address with the command `minikube ip`.
-**Note:** We can choose the external port by spcifying the `spec.ports.nodePort` property in the config file of the service.
+**Note:** We can choose the external port by specifying the `spec.ports.nodePort` property in the config file of the service.
 ```bash
 $ minikube ip
 192.168.146.52
